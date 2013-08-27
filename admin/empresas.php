@@ -281,7 +281,7 @@ function SeleccionandoCombo(combo1, combo2){
     <td class="Contenidonegro"><div align="center"><a href="empresas.php?rut=<?php echo $rs["rut"]; ?>&amp;act=edi"><img src="Lapiz.png" width="16" height="16" border="0" /></a></div></td>
     <td class="Contenidonegro"><div align="center"><?php echo $rs["rut"]; ?></div></td>
     <td class="Contenidonegro"><a href="detalleempresa.php?rut=<?php echo $rs["usuario"]; ?>" class="Contenidonegro"><?php echo $rs["nombre"]; ?></a></td>
-    <td class="Contenidonegro"><a href="mailto: <?php echo $rs["mailcontactosistema"]; ?>" class="Contenidonegro"><?php echo $rs["mailcontactosistema"]; ?></a></td>
+    <td class="Contenidonegro"><a href="mailto: <?php echo $rs["mailcontactosistema"]; ?>" class="Contenidonegro"><?php echo $rs["mailempresa"]; ?></a></td>
   </tr>
   <?php } ?>
   <tr>

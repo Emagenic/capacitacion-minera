@@ -8,7 +8,7 @@ if ($_POST["Grabar"]){ // Graba el nuevo usuario
 			$repassword = $_POST["repassword"];	
 			$correo = $_POST["mail"];
 			$telefono =$_POST["telefono"];
-			$activa ="no";
+			$activa ="si";
 			$club ="empresa";
 			$listado = "select * from usuario where usuario = '$usuario'  ";
 			$sentencia = mysql_query($listado,$conn);
@@ -34,7 +34,7 @@ if ($_POST["Grabar"]){ // Graba el nuevo usuario
 				//************************** ENVIO DE CORREO ELECTRONICO ***********************************
 				$destinatario = $_POST["mail"]; 
 				$asunto = "Activacion de cuenta SGPR"; 
-				$cuerpo ="<html><head><meta http-equiv=Content-Type content=text/html; charset=iso-8859-1 /><title>REGISTRO DE EMPRESAS</title><style type=text/css><!--.Estilo2 {	font-family: Verdana;	font-size: 16px;}.Estilo4 {	font-family: Verdana;	font-size: 12px;}--></style></head><body><table width=600 border=0 cellspacing=0 cellpadding=0><tr><td width=170 rowspan=4><img src=http://www.emagenic.cl/imagenes/logo.jpg width=200  /></td><td width=430><span class=Estilo2>MUY BUEN DIA</span></td></tr><tr><td><span class=Estilo4>SU EMPRESA HA SIDO REGISTRADA EN EL SISTEMA DE GESTION PARA LA PREVENCION DE RIESGOS, EN UN PERIODO NO SUPERIOR A 48 HRS SE CREARAN SUS PERFILES Y PODRA UTILIZAR LA PLATAFORMA.</span></td></tr><tr><td>&nbsp;</td></tr><tr><td><div align=center><span class=Estilo4><a href=http://www.prevencionriesgos.cl/activarcuenta.php?f=act&mail=$_POST[mail]>PARA ACTIVAR SU CUENTA HAGA CLIC ACA</a></span></div></td></tr></table></body></html>";
+				$cuerpo ="<html><head><meta http-equiv=Content-Type content=text/html; charset=iso-8859-1 /><title>REGISTRO DE EMPRESAS</title><style type=text/css><!--.Estilo2 {	font-family: Verdana;	font-size: 16px;}.Estilo4 {	font-family: Verdana;	font-size: 12px;}--></style></head><body><table width=600 border=0 cellspacing=0 cellpadding=0><tr><td width=170 rowspan=4><img src=http://www.emagenic.cl/imagenes/logo.jpg width=200  /></td><td width=430><span class=Estilo2>MUY BUEN DIA</span></td></tr><tr><td><span class=Estilo4>SU EMPRESA HA SIDO REGISTRADA EN EL SISTEMA DE GESTION PARA LA PREVENCION DE RIESGOS, EN UN PERIODO NO SUPERIOR A 48 HRS SE CREARAN SUS PERFILES Y PODRA UTILIZAR LA PLATAFORMA.</span></td></tr><tr><td>&nbsp;</td></tr><tr><td><div align=center><span class=Estilo4><a href=http://www.capacitacionminera.cl/activarcuenta.php?f=act&mail=$_POST[mail]>PARA ACTIVAR SU CUENTA HAGA CLIC ACA</a></span></div></td></tr></table></body></html>";
 			$headers = "MIME-Version: 1.0\r\n"; 
 			$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 			//direcci?n del remitente 

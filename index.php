@@ -18,9 +18,18 @@ if ($_GET["fun"]=="cerrar"){
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<link href="segundo.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Sistema de gestion de prevencion de riesgos</title>
-
+<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Forum_400.font.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/tms-0.3.js"></script>
+<script type="text/javascript" src="js/tms_presets.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/atooltip.jquery.js"></script> 
 <script type="text/javascript">
 /***********************************************
 * IFrame SSI script II- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
@@ -95,6 +104,7 @@ function MM_preloadImages() { //v3.0
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
+
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
@@ -126,15 +136,12 @@ body {
 </head>
 
 <body onload="MM_preloadImages('grafica/menu/inicio_on.jpg','grafica/menu/quienes_somos_on.jpg','grafica/menu/clientes_on.jpg','grafica/menu/servicios_on.jpg','grafica/menu/cursos_on.jpg','grafica/menu/contacto_on.jpg')">
-<table width="685" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="86" colspan="2">&nbsp;</td>
+    <td height="86" colspan="2" bgcolor="#FFFFFF"><img src="grafica/logo.png" width="335" height="67" /></td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="8" colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <td height="8" colspan="2" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="13%"><a href="home.php" target="framehome" onmouseover="MM_swapImage('Inicio','','grafica/menu/inicio_on.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="grafica/menu/inicio_off.jpg" alt="Inicio" width="104" height="41" id="Inicio" /></a></td>
         <td width="13%"><a href="quienes_somos.php" target="framehome" onmouseover="MM_swapImage('Nosotros','','grafica/menu/quienes_somos_on.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="grafica/menu/quienes_somos_off.jpg" alt="Nosotros" width="104" height="41" id="Nosotros" /></a></td>
@@ -142,15 +149,50 @@ body {
         <td width="13%"><a href="servicios.php" target="framehome" onmouseover="MM_swapImage('Servicios','','grafica/menu/servicios_on.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="grafica/menu/servicios_off.jpg" alt="Servicios" width="104" height="41" id="Servicios" /></a></td>
         <td width="13%"><a href="cursos.php" target="framehome" onmouseover="MM_swapImage('Cursos','','grafica/menu/cursos_on.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="grafica/menu/cursos_off.jpg" alt="cursos.php" width="104" height="41" id="Cursos" /></a></td>
         <td width="13%"><a href="contactenos.php" target="framehome" onmouseover="MM_swapImage('Contacto','','grafica/menu/contacto_on.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="grafica/menu/contacto_off.jpg" alt="Contacto" width="104" height="41" id="Contacto" /></a></td>
-        <td width="22%">&nbsp;</td>
+        <td width="22%" bgcolor="#DFD1C0">&nbsp;</td>
       </tr>
       <tr>
-        <td colspan="7"><img src="grafica/menu.jpg" width="800" /></td>
+        <td height="250px" colspan="7" valign="top" background="grafica/menu.jpg">
+        <div class="slider">
+          <ul class="items">
+            <li> <img src="grafica/slide/1.png" a="a" />
+              <div class="banner"> <strong>CURSOS BASEDET</span></strong> <b>PARA LA MINERIA</b>
+                <p><span>Nosotros ofrecemos experiencia y seriedad,	
+                  respaldada por mas de 10 años de experiencia.</span></p>
+              </div>
+            </li>
+            <li> <img src="grafica/slide/2.png" alt="" />
+              <div class="banner"> <strong>CONTROL DE</span></strong> <b>FATALIDADES</b>
+                <p><span>Nuestra empresa cuenta con los mejores elementos materiales y un experimentado 
+                  cuerpo docente.</span></p>
+              </div>
+            </li>
+            <li> <img src="grafica/slide/3.png" alt="" />
+              <div class="banner"> <strong>CONDUCCIÓN EN</span></strong> <b>ALTA MONTA&Ntilde;A </b>
+                <p><span>Cursos profesionales, pr&aacute;cticos y modernos, que les ofrecen las mejores posibilidades 
+                  de asegurar su futuro con trabajo interesante, agradable, para todas las areas.</span></p>
+              </div>
+            </li>
+            <li> <img src="grafica/slide/4.png" alt="" />
+              <div class="banner"> <strong>PRIMEROS</span></strong> <b>AUXILIOS</b>
+                <p><span>Cursos básicos y avanzados de primeros auxilis, socorrismo y rescate.</span></p>
+              </div>
+            </li>
+            <li> <img src="grafica/slide/5.png" alt="" />
+              <div class="banner"> <strong>LINEA DE MANDO</span></strong> <b>SUPERVISORES </b>
+                <p><span>Cursos profesionales, pr&aacute;cticos y modernos, que les ofrecen las mejores posibilidades de asegurar 
+                  su futuro con trabajo interesante, agradable, para todas las lineas de mando.</span></p>
+              </div>
+            </li>
+          </ul>
+        </div></td>
       </tr>
     </table></td>
   </tr>
   <tr>
-    <td width="235" align="center" valign="top" ><table width="235" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="235" align="center" valign="top" >
+    &nbsp;
+    <table width="234" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="358" height="181" valign="top" background="grafica/inicio_sesion.jpg"><?php if ($_SESSION["$nusuario"] == ""){ ?>
           <form id="form2" name="form1" method="post" action="index.php">
@@ -200,61 +242,61 @@ body {
 				$perfil = $rs["perfil"];
 			}
 		  	if ($perfil=="empresa"){ ?>
-          <table width="84%" border="0" align="center" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="41%" height="66">&nbsp;</td>
-              <td width="3%">&nbsp;</td>
-              <td width="56%">&nbsp;</td>
-            </tr>
-            <tr>
-              <td colspan="3" class="Letra1_blanca"><div align="center"><a href="admin/detalleempresa.php" target="framehome" class="Letra1_blanca">IR AL SISTEMA</a></div>
-                <label></label></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"></td>
-            </tr>
-            <tr>
-              <td colspan="3" class="Letra1_blanca"><div align="center"><a href="cambiarpassword.php" target="framehome" class="Letra1_blanca">CAMBIAR PASSWORD</a></div>
-                <div align="left"></div>
-                <div align="left"></div></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"><div align="center"><a href="index.php?fun=cerrar" class="Letra1_blanca">CERRAR SESION</a></div></td>
-            </tr>
-          </table>
-         
-            <?php } if ($perfil=="admin"){ ?>
-      
-          <table width="84%" border="0" align="center" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="41%" height="66">&nbsp;</td>
-              <td width="3%">&nbsp;</td>
-              <td width="56%">&nbsp;</td>
-            </tr>
-            <tr>
-              <td colspan="3" class="Letra1_blanca"><div align="center"><a href="admin/sesion.php" target="framehome" class="Letra1_blanca">IR AL SISTEMA</a></div>
-                <label></label></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"></td>
-            </tr>
-            <tr>
-              <td colspan="3" class="Letra1_blanca"><div align="center"><a href="cambiarpassword.php" target="framehome" class="Letra1_blanca">CAMBIAR PASSWORD</a></div>
-                <div align="left"></div>
-                <div align="left"></div></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"></td>
-            </tr>
-            <tr>
-              <td height="5" colspan="3"><div align="center"><a href="index.php?fun=cerrar" class="Letra1_blanca">CERRAR SESION</a></div></td>
-            </tr>
-          </table>
-          <?php } }?>
-          <p>&nbsp; </p></td>
+<table width="84%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="41%" height="66">&nbsp;</td>
+    <td width="3%">&nbsp;</td>
+    <td width="56%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="Letra1_blanca"><div align="center"><a href="admin/detalleempresa.php" target="framehome" class="Letra1_blanca">IR AL SISTEMA</a></div>
+      <label></label></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="Letra1_blanca"><div align="center"><a href="cambiarpassword.php" target="framehome" class="Letra1_blanca">CAMBIAR PASSWORD</a></div>
+      <div align="left"></div>
+      <div align="left"></div></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"><div align="center"><a href="index.php?fun=cerrar" class="Letra1_blanca">CERRAR SESION</a></div></td>
+  </tr>
+</table>
+<?php } if ($perfil=="admin"){ ?>
+<table width="84%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="41%" height="66">&nbsp;</td>
+    <td width="3%">&nbsp;</td>
+    <td width="56%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="Letra1_blanca"><div align="center"><a href="admin/sesion.php" target="framehome" class="Letra1_blanca">IR AL SISTEMA</a></div>
+      <label></label></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="Letra1_blanca"><div align="center"><a href="cambiarpassword.php" target="framehome" class="Letra1_blanca">CAMBIAR PASSWORD</a></div>
+      <div align="left"></div>
+      <div align="left"></div></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"></td>
+  </tr>
+  <tr>
+    <td height="5" colspan="3"><div align="center"><a href="index.php?fun=cerrar" class="Letra1_blanca">CERRAR SESION</a></div></td>
+  </tr>
+</table>
+<?php } }?>
+          
+          
+          </td>
       </tr>
       <tr>
         <td>&nbsp;</td>

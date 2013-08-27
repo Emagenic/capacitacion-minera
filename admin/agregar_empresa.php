@@ -2,8 +2,8 @@
 session_start();
 include("../Conexion.php");
 if ($_POST["grabarasesoria"]){ // Graba el nuevo usuario
-	$insertar="INSERT INTO empresas (region, comuna,rut,nombre ,web,direccion ,giro ,fonoempresa, mailempresa, contactosistema, fonocontactosistema, mailcontactosistema ) ";
-	$insertar.= "VALUES( '$_POST[region]','$_POST[comuna]','$_POST[rut]', '$_POST[nombre]' , '$_POST[web]', '$_POST[direccion]' , '$_POST[giro]' , '$_POST[fonoempresa]', '$_POST[mailempresa]', '$_POST[contactosistema]', '$_POST[fonocontactosistema]', '$_POST[mailcontactosistema]')";
+	$insertar="INSERT INTO empresas (region, comuna,rut,nombre ,web,direccion ,giro ,fonoempresa, mailempresa, contactosistema, fonocontactosistema, mailcontactosistema,act ) ";
+	$insertar.= "VALUES( '$_POST[region]','$_POST[comuna]','$_POST[rut]', '$_POST[nombre]' , '$_POST[web]', '$_POST[direccion]' , '$_POST[giro]' , '$_POST[fonoempresa]', '$_POST[mailempresa]', '$_POST[contactosistema]', '$_POST[fonocontactosistema]', '$_POST[mailcontactosistema]','si')";
 	$sentencia=mysql_query($insertar,$conn)or die("Error al grabar un mensaje: ".mysql_error);
 	header("location: empresas.php");
 }
